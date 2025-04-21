@@ -1,0 +1,112 @@
+{
+    "artists": [
+        {
+            "name": "Aidan",
+            "bio": "Aidan is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/Aidan"
+            },
+            "listen_link": "#",
+            "image": "Aidan.jpg"
+        },
+        {
+            "name": "Aidan Zammit",
+            "bio": "Aidan Zammit is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/AidanZammit"
+            },
+            "listen_link": "#",
+            "image": "Aidan_Zammit.jpg"
+        },
+        {
+            "name": "Amber Bondin",
+            "bio": "Amber Bondin is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/AmberBondin"
+            },
+            "listen_link": "#",
+            "image": "Amber_Bondin.jpg"
+        },
+        {
+            "name": "Avenue Sky",
+            "bio": "Avenue Sky is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/AvenueSky"
+            },
+            "listen_link": "#",
+            "image": "Avenue_Sky.jpg"
+        },
+        {
+            "name": "Bernie & Pod and Fiona Cauchi",
+            "bio": "Bernie & Pod and Fiona Cauchi is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/BernieAndPodandFionaCauchi"
+            },
+            "listen_link": "#",
+            "image": "Bernie_And_Pod_and_Fiona_Cauchi.jpg"
+        },
+        {
+            "name": "Bloodline",
+            "bio": "Bloodline is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/Bloodline"
+            },
+            "listen_link": "#",
+            "image": "Bloodline.jpg"
+        },
+        {
+            "name": "Brooke",
+            "bio": "Brooke is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/Brooke"
+            },
+            "listen_link": "#",
+            "image": "Brooke.jpg"
+        },
+        {
+            "name": "Charisse Vassallo",
+            "bio": "Charisse Vassallo is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/CharisseVassallo"
+            },
+            "listen_link": "#",
+            "image": "Charisse_Vassallo.jpg"
+        },
+        {
+            "name": "Cheryl Camilleri",
+            "bio": "Cheryl Camilleri is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/CherylCamilleri"
+            },
+            "listen_link": "#",
+            "image": "Cheryl_Camilleri.jpg"
+        },
+        {
+            "name": "Cherylis",
+            "bio": "Cherylis is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/Cherylis"
+            },
+            "listen_link": "#",
+            "image": "Cherylis.jpg"
+        },
+        {
+            "name": "Christabelle Borg",
+            "bio": "Christabelle Borg is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/ChristabelleBorg"
+            },
+            "listen_link": "#",
+            "image": "Christabelle_Borg.jpg"
+        },
+        {
+            "name": "Christian Arding",
+            "bio": "Christian Arding is a celebrated name in the Maltese music scene, contributing uniquely to their genre with consistent impact.",
+            "socials": {
+                "Facebook": "https://www.facebook.com/ChristianArding"
+            },
+            "listen_link": "#",
+            "image": "Christian_Arding.jpg"
+        }
+    ]
+}

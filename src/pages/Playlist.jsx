@@ -1,0 +1,1 @@
+function Playlist() { return <div className='p-4'>Playlist Page</div>; } export default Playlist;

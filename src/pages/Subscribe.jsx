@@ -1,0 +1,1 @@
+function Subscribe() { return <div className='p-4'>Subscription Plans</div>; } export default Subscribe;
