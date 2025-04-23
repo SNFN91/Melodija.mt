@@ -1,79 +1,76 @@
 import React from "react";
 
-const featuredArtists = [
-  {
-    name: "Emma Muscat",
-    image: "/artists/emma-muscat.jpg",
-    subtitle: "Top Tracks"
-  },
-  {
-    name: "Aidan",
-    image: "/artists/aidan.jpg",
-    subtitle: "Essential Tunes"
-  },
-  {
-    name: "Ira Losco",
-    image: "/artists/ira-losco.jpg",
-    subtitle: "Fan Favorites"
-  },
-  {
-    name: "Destiny",
-    image: "/artists/destiny.jpg",
-    subtitle: "Powerful Vocals"
-  }
-];
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fdf5e6] text-black font-sans">
-      {/* Navigation Bar */}
-      <nav className="w-full flex justify-between items-center px-8 py-5 border-b border-gray-200">
-        <div className="flex items-center space-x-3">
-          <img src="/logo.png" alt="Melodija Logo" className="h-12 w-12" />
-          <span className="text-2xl font-extrabold tracking-wide">Melodija.mt</span>
+    <div className="min-h-screen bg-[#fdf5e6] text-white flex flex-col lg:flex-row">
+      {/* Sidebar */}
+      <aside className="bg-[#1e1e1e] w-full lg:w-64 p-6 flex flex-col justify-between">
+        <div>
+          <div className="text-2xl font-extrabold text-red-500 mb-8">
+            Melodija<span className="text-white">.mt</span>
+          </div>
+          <nav className="space-y-4">
+            <div className="text-lg font-semibold text-white">Home</div>
+            <div className="text-lg text-gray-400">Search</div>
+            <div className="text-lg text-gray-400">Your Library</div>
+          </nav>
+          <div className="mt-10">
+            <p className="text-sm uppercase text-gray-400 mb-2">Recently played</p>
+            <ul className="space-y-2">
+              {['L-Avventura', 'Skond Il-Qalb', 'Mhabbit', 'Idba Minn Gdid'].map((title, idx) => (
+                <li key={idx} className="text-sm text-white truncate">
+                  🎵 {title}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <ul className="hidden md:flex space-x-8 text-base font-medium">
-          <li className="cursor-pointer hover:text-red-600 transition">Home</li>
-          <li className="cursor-pointer hover:text-red-600 transition">Browse</li>
-          <li className="cursor-pointer hover:text-red-600 transition">About</li>
-          <li className="cursor-pointer hover:text-red-600 transition">Contact</li>
-        </ul>
-      </nav>
+        <button className="mt-8 bg-red-600 hover:bg-red-700 py-2 px-4 rounded text-sm font-medium">Upgrade</button>
+      </aside>
 
-      {/* Hero Section */}
-      <section className="text-center py-28 px-6">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-          Discover Malta’s Sound
-        </h1>
-        <p className="text-xl md:text-2xl max-w-2xl mx-auto text-gray-700 mb-10">
-          A platform for local artists, past and present. Stream Maltese music anywhere, anytime.
-        </p>
-        <button className="bg-red-600 hover:bg-red-700 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg transition">
-          Start Listening
-        </button>
-      </section>
+      {/* Main Content */}
+      <main className="flex-1 p-6 overflow-auto">
+        <h1 className="text-3xl font-bold text-black mb-6">Good morning</h1>
 
-      {/* Featured Playlists Grid */}
-      <section className="px-8 pb-28">
-        <h2 className="text-3xl font-bold mb-10 text-left">Featured Playlists</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-          {featuredArtists.map((artist, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
-              <img
-                src={artist.image}
-                alt={artist.name}
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold mb-1">{artist.name}</h3>
-                <p className="text-sm text-gray-600">{artist.subtitle}</p>
+        {/* Recently Played */}
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold text-black mb-3">Recently played</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {["Mix", "Top Maltese Songs", "Muzika Muzika", "Classical"].map((title, idx) => (
+              <div key={idx} className="bg-white rounded-lg p-4 text-black text-center shadow">
+                <div className="text-4xl mb-2">🎶</div>
+                <div className="font-medium text-sm">{title}</div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+
+        {/* Playlists */}
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold text-black mb-3">Playlists</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {["Enzò Gusman", "Skond il-Qalb", "Mhabbit", "Idba Minn Gdid"].map((title, idx) => (
+              <div key={idx} className="bg-white rounded-lg text-center p-4 shadow text-black">
+                <div className="h-32 w-full bg-gray-300 rounded mb-2"></div>
+                <div className="font-semibold text-sm">{title}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Genres */}
+        <section>
+          <h2 className="text-xl font-semibold text-black mb-3">Genres</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {["Folk", "Pop", "Rap", "Rock"].map((genre, idx) => (
+              <div key={idx} className="bg-white rounded-lg text-center p-4 shadow text-black">
+                <div className="h-32 w-full bg-gray-200 rounded mb-2"></div>
+                <div className="font-semibold text-sm">{genre}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
